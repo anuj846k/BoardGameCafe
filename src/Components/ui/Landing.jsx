@@ -22,20 +22,20 @@ export default function Landing() {
           {/* Text Content */}
           <div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left z-10 pt-20 relative">
             <motion.div
-              initial={{ x: -200, opacity: 0 }} // Initial position and opacity
-              animate={{ x: 0, opacity: 1 }} // Animation target position and opacity
-              transition={{ type: "spring", duration: 2 }} // Animation type and duration
+              initial={{ x: -200, opacity: 0 }} 
+              animate={{ x: 0, opacity: 1 }} 
+              transition={{ type: "spring", duration: 2 }} 
             >
-              <h1 className=" text-6xl md:text-6xl font-sans font-bold text-white text-center p-5">
+              <h1 className=" text-6xl font-roboto md:text-6xl uppercase shadow-lg z-10 font-bold text-white rounded-s-full  text-center p-7">
                 Welcome to Sip and Play
               </h1>
             </motion.div>
             <motion.div
-              initial={{ x: 200, opacity: 0 }} // Initial position and opacity
-              animate={{ x: 0, opacity: 1 }} // Animation target position and opacity
-              transition={{ type: "spring", duration: 2 }} // Animation type and duration
+              initial={{ x: 200, opacity: 0 }} 
+              animate={{ x: 0, opacity: 1 }} 
+              transition={{ type: "spring", duration: 2 }} 
             >
-              <p className=" text-lg md:text-xl text-white px-16 font-sans text-center">
+              <p className=" text-lg md:text-3xl font-roboto text-white  px-16  text-center">
                 A unique experience awaits you!
               </p>
             </motion.div>
