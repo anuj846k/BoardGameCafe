@@ -16,7 +16,7 @@ export default function Register() {
                         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-8xl text-gray-800">
                             RESERVE YOUR SPOT AT THE BOARD GAME CAFE
                         </h1>
-                        <button className="inline-flex items-center justify-center mt-4 bg-[#D9D9D9] hover:bg-[#C9C9C9] p-4">
+                        <button className="inline-flex items-center justify-center mt-4 bg-[#D9D9D9] hover:bg-[#C9C9C9] rounded-full p-4">
                             Make a Reservation
                         </button>
                     </div>
@@ -25,8 +25,8 @@ export default function Register() {
                     </div>
                 </section>
                 <section className="w-full py-12 md:py-24 lg:py-32 px-6 md:px-6 border-2 border-gray-200">
-                    <div className="w-full md:w-3/5 lg:w-2/5 mx-auto">
-                        <div className="space-y-6">
+                    <div className="w-full md:w-3/5 lg:w-2/5 mx-auto border-2 p-7 rounded-lg border-black">
+                        <div className="space-y-6 ">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">
                                 Reserve Your Spot
                             </h2>
