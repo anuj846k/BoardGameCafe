@@ -4,6 +4,11 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import Navbar from '../Shared/Navbar';
 import Footer from '../Shared/Footer';
+import img1 from '../../assets/img/event1.jpg';
+import img2 from '../../assets/img/event2.jpg';
+import img3 from '../../assets/img/event3.jpg';
+import img4 from '../../assets/img/event4.jpg';
+import img5 from '../../assets/img/event6.jpg';
 
 const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const months = [
@@ -92,11 +97,11 @@ useEffect(() => {
           <div className="splide w-full h-full">
         <div className="splide__track w-full ">
           <ul className="splide__list">
-            <li className="splide__slide "><img src="./src/assets/img/event1.jpg" alt="Event 1" className='w-full h-full' /></li>
-            <li className="splide__slide"><img src="./src/assets/img/event2.jpg" alt="Event 2" className='w-full h-full'  /></li>
-            <li className="splide__slide"><img src="./src/assets/img/event3.jpg" alt="Event 3" className='w-full h-full'  /></li>
-            <li className="splide__slide"><img src="./src/assets/img/event4.jpg" alt="Event 4" className='w-full h-full'  /></li> 
-            <li className="splide__slide"><img src="./src/assets/img/event6.jpg" alt="Event 6" className='w-full h-full'  /></li>
+            <li className="splide__slide "><img src={img1} alt="Event 1" className='w-full h-full' /></li>
+            <li className="splide__slide"><img src={img2} alt="Event 2" className='w-full h-full'  /></li>
+            <li className="splide__slide"><img src={img3} alt="Event 3" className='w-full h-full'  /></li>
+            <li className="splide__slide"><img src={img4} alt="Event 4" className='w-full h-full'  /></li> 
+            <li className="splide__slide"><img src={img5} alt="Event 6" className='w-full h-full'  /></li>
             {/* Add more images here */}
           </ul>
         </div>
@@ -112,7 +117,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-1 xl:grid-cols-2 md:px-6 lg:px-4 xl:px-0">
             <div className="w-full  lg:m-10 mx-auto lg:mx-0 md:mx-0">
               <img
-                src="./src/assets/img/event1.jpg"
+                src={img1}
                 alt=""
                 className="h-[400px] w-full"
               />
@@ -142,7 +147,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-1 xl:grid-cols-2 md:px-6 lg:px-4 xl:px-0">
             <div className="w-full m-10 mx-auto lg:mx-0 md:mx-0">
               <img
-                src="./src/assets/img/event2.jpg"
+                src={img2}
                 alt=""
                 className="h-[400px] w-full"
               />
@@ -173,7 +178,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-1 xl:grid-cols-2 md:px-6 lg:px-4 xl:px-0">
             <div className="w-full m-10 mx-auto lg:mx-0 md:mx-0">
               <img
-                src="./src/assets/img/event3.jpg"
+                src={img3}
                 alt=""
                 className="h-[400px] w-full"
               />
@@ -204,7 +209,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-1 xl:grid-cols-2 md:px-6 lg:px-4 xl:px-0">
             <div className="w-full m-10 mx-auto lg:mx-0 md:mx-0">
               <img
-                src="./src/assets/img/event4.jpg"
+                src={img4}
                 alt=""
                 className="h-[400px] w-full"
               />
@@ -232,7 +237,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-1 xl:grid-cols-2 md:px-6 lg:px-4 xl:px-0">
             <div className="w-full m-10 mx-auto lg:mx-0 md:mx-0">
               <img
-                src="./src/assets/img/event6.jpg"
+                src={img5}
                 alt=""
                 className="h-[400px] w-full"
               />
