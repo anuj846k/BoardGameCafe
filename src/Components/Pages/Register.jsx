@@ -21,7 +21,7 @@ export default function Register() {
                         </button>
                     </div>
                     <div className="w-full md:w-3/5 mt-6 md:mt-0 p-4 md:p-0">
-                        <img src={pic} alt="Board Game Cafe" className="w-full h-auto" />
+                        <img src={pic} alt="Board Game Cafe" className="w-full h-auto  rounded-s-full" />
                     </div>
                 </section>
                 <section className="w-full py-12 md:py-24 lg:py-32 px-6 md:px-6 border-2 border-gray-200">
