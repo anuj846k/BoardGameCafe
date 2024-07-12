@@ -39,12 +39,12 @@ useEffect(() => {
     <Navbar />
     <div
       id="event"
-      className="w-full h-full bg-amber-100 overflow-hidden"
+      className="w-full h-full bg-amber-100"
     >
       <section className="w-full h-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-4">
-            <h1 className="text-4xl font-semibold tracking-tighter md:text-4xl/tight lg:text-7xl">
+            <h1 className="text-5xl font-bold tracking-tighter md:text-4xl/tight lg:text-7xl">
               Upcoming Events and Programs
             </h1>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
@@ -105,7 +105,7 @@ useEffect(() => {
       </div>
     </div>
       <section
-        className="w-full py-12 md:py-24 lg:py-16 flex justify-center bg-amber-100"
+        className="w-full py-12 md:py-24 lg:py-16 flex justify-center"
         id="event"
       >
         <div className="container grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-1 md:px-6">

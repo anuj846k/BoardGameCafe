@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import Logo from "../../assets/img/sip_and_play_logo.png";
+import Logo from "../../assets/Logo/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,13 +27,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`w-full fixed top-0 z-50 transition duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-transparent'} 
-                   ${isScrolled ? 'text-white' : 'text-gray-800'} 
+    <nav className={`w-full fixed top-0 z-50 transition duration-300 ${isScrolled ? 'bg-[#E0F0B1]' : 'bg-transparent'} 
+                   ${isScrolled ? 'text-gray-800' : 'text-white'} 
                    ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-          <img className="w-12 h-12" alt="logo" src={Logo} />
+          <img className="w-16 h-16" alt="logo" src={Logo} />
             {/* <h1 className="text-lg font-bold">Logo</h1> */}
           </div>
           <div className="hidden md:flex">
@@ -56,13 +56,13 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className={`md:hidden ${isScrolled ? 'bg-gray-800' : 'bg-['}`}>
+        <div className={`md:hidden ${isScrolled ? 'bg-[#E0F0B1]' : 'bg-['}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Home</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Events</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Menu</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Reservation</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Boardgames</a>
+            <a href="/" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Home</a>
+            <a href="/event" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Events</a>
+            <a href="/menu" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Menu</a>
+            <a href="/register" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Reservation</a>
+            <a href="/boardgame" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Boardgames</a>
           </div>
         </div>
       )}

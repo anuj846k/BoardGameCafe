@@ -1,7 +1,11 @@
-import Logo from "../../assets/img/sip_and_play_logo.png";
+import Logo from "../../assets/Logo/logo.png";
 import { FaFacebook, FaInstagram, FaTiktok} from 'react-icons/fa';
 
 const Footer = () => {
+
+  const emailAddress = 'sipnplaynyc@gmail.com';
+
+
   return (
     <footer className="bg-[#E0F0B1] py-5">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
@@ -38,8 +42,13 @@ const Footer = () => {
   
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">sipnplaynyc@gmail.com</p>
-          <p>718-971-1684</p>
+          
+          <p className="py-5">
+            <a href={`mailto:${emailAddress}`} className="my-5 hover:underline">
+              {emailAddress}
+            </a>
+          </p>
+          <p className="py-4">718-971-1684</p>
           <p className="my-8">©2020 by Sip & Play</p>
         </div>
       </div>
