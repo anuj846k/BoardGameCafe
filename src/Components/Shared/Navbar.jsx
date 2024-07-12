@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full fixed top-0 z-50 transition duration-300 ${isScrolled ? 'bg-[#E0F0B1]' : 'bg-transparent'} 
-                   ${isScrolled ? 'text-gray-800' : 'text-white'} 
+                   ${isScrolled ? 'text-gray-800' : 'text-black'} 
                    ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
@@ -38,15 +38,15 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex">
             <ul className="ml-4 flex space-x-4 font-semibold">
-              <li><a href="/" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Home</a></li>
-              <li><a href="/event" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Events</a></li>
-              <li><a href="/menu" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Menu</a></li>
-              <li><a href="/register" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Reservation</a></li>
-              <li><a href="/boardgame" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Boardgames</a></li>
+              <li><a href="/" className={`hover:${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}>Home</a></li>
+              <li><a href="/event" className={`hover:${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}>Events</a></li>
+              <li><a href="/menu" className={`hover:${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}>Menu</a></li>
+              <li><a href="/register" className={`hover:${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}>Reservation</a></li>
+              <li><a href="/boardgame" className={`hover:${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}>Boardgames</a></li>
             </ul>
           </div>
           <div className="flex md:hidden">
-            <button onClick={toggleMenu} className="text-gray-400 hover:text-gray-300 focus:outline-none">
+            <button onClick={toggleMenu} className="text-gray-900 hover:text-gray-900 focus:outline-none">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
