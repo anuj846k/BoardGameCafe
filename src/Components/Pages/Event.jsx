@@ -39,7 +39,7 @@ useEffect(() => {
     <Navbar />
     <div
       id="event"
-      className="w-full h-full bg-amber-100"
+      className="w-full h-full bg-amber-100 overflow-hidden"
     >
       <section className="w-full h-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
