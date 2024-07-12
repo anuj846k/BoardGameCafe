@@ -42,7 +42,7 @@ const Carousel = () => {
 
       <div className="relative">
         <div className="rellax" data-rellax-speed="-5">
-        <h1 className="text-4xl pl-12 pt-8 font-bold mb-2">Explore our fun events</h1>
+        <h1 className="md:text-6xl text-4xl pl-12 pt-8 font-bold mb-5">Explore our fun events</h1>
         </div>
         <div className="overflow-hidden rounded-lg">
           <img
