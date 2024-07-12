@@ -38,11 +38,11 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex">
             <ul className="ml-4 flex space-x-4 font-semibold">
-              <li><a href="#" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Home</a></li>
-              <li><a href="#" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Events</a></li>
-              <li><a href="#" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Menu</a></li>
-              <li><a href="#" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Reservation</a></li>
-              <li><a href="#" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Boardgames</a></li>
+              <li><a href="/" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Home</a></li>
+              <li><a href="/event" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Events</a></li>
+              <li><a href="/menu" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Menu</a></li>
+              <li><a href="/register" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Reservation</a></li>
+              <li><a href="/boardgame" className={`hover:${isScrolled ? 'text-gray-300' : 'text-gray-800'}`}>Boardgames</a></li>
             </ul>
           </div>
           <div className="flex md:hidden">
