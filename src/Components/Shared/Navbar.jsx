@@ -58,11 +58,11 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className={`md:hidden ${isScrolled ? 'bg-[#E0F0B1]' : 'bg-['}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Home</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Events</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Menu</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Reservation</a>
-            <a href="#" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Boardgames</a>
+            <a href="/" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Home</a>
+            <a href="/event" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Events</a>
+            <a href="/menu" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Menu</a>
+            <a href="/register" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Reservation</a>
+            <a href="/boardgame" className={`block px-3 py-2 rounded-md text-base font-semibold ${isScrolled ? 'text-black' : 'text-gray-800'} hover:bg-gray-700 hover:text-white`}>Boardgames</a>
           </div>
         </div>
       )}
