@@ -6,7 +6,7 @@ const cafeStyle = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
     backgroundPosition: "center",
-    minHeight: "100vh",
+    minHeight: "50vh",
     opacity: "0.17",
     width: "100%",
   };
@@ -14,54 +14,54 @@ const cafeStyle = {
 const ThirdPage = () => {
   return (
     <div className="h-full">
-      <div style={cafeStyle} className="h-full absolute inset-0"></div>
-      <main className="h-full w-full bg-secondary page-shadow p-10">
-        <div className="space-y-4">
+      <div style={cafeStyle} className="h-full absolute inset-0 md:min-h-100vh"></div>
+      <main className="h-full w-full bg-secondary page-shadow md:p-10 p-4">
+        <div className="md:space-y-4 space-y-0">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
+            <h1 className="text-2xl md:text-6xl font-bold text-gray-900">
               THE OG
             </h1>
-            <p className="text-gray-600">Bad day? Have a boba.</p>
+            <p className="text-gray-600 md:text-[16px] text-xs">Bad day? Have a boba.</p>
           </div>
 
           <div className="p-1 flex flex-row gap-16">
-            <div className="space-y-2 w-1/2">
+            <div className="md:space-y-2 w-1/2 space-y-0">
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold">Classic Milk Tea</h2>
-                  <p>Medium: $4.25</p>
-                  <p>Large: $5.25</p>
-                  <p>Hot: $5.25</p>
+                  <h2 className="md:text-xl text-xs font-semibold">Classic Milk Tea</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Medium: $4.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Large: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs md:block hidden">Hot: $5.25</p>
                 </div>
               </div>
 
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold">Brown Sugar Boba</h2>
-                  <p>Medium: $4.75</p>
-                  <p>Large: $5.75</p>
-                  <p>Hot: $5.75</p>
-                  <p>Caffeine free</p>
+                  <h2 className="md:md:text-xl text-xs font-semibold">Brown Sugar Boba</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Medium: $4.75</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Large: $5.75</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Hot: $5.75</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs md:block hidden">Caffeine free</p>
                 </div>
               </div>
 
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold">Taro Boba Coconut Boba</h2>
-                  <p>Medium: $4.25</p>
-                  <p>Large: $5.25</p>
-                  <p>Hot: $5.25</p>
-                  <p>Caffeine free, dairy free</p>
+                  <h2 className="md:text-xl text-xs font-semibold">Taro Boba Coconut Boba</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Medium: $4.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Large: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Hot: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs md:block hidden">Caffeine free, dairy free</p>
                 </div>
               </div>
 
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold">Fruit Green/Black Tea</h2>
-                  <p>Medium: $4.25</p>
-                  <p>Large: $5.25</p>
-                  <p>Comes in a variety of flavors:</p>
-                  <p>mango/strawberry/passionfruit/peach/green apple/lychee/kiwi</p>
+                  <h2 className="md:text-xl text-xs font-semibold">Fruit Green/Black Tea</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Medium: $4.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Large: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs z-10 md:block hidden">Comes in a variety of flavors:</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs z-10 md:block hidden">mango/strawberry/passionfruit/peach/ apple/lychee/kiwi</p>
                
                 </div>
               </div>
@@ -70,24 +70,24 @@ const ThirdPage = () => {
             <div className="space-y-2 w-1/2">
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold">Jasmine Milk Tea Wintermelon Milk Tea</h2>
-                  <p>Medium: $4.25</p>
-                  <p>Large: $5.25</p>
-                  <p>Hot: $5.25</p>
-                  <p>Dairy free</p>
+                  <h2 className="md:text-xl text-xs font-semibold">Jasmine Milk Tea Wintermelon Milk Tea</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Medium: $4.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Large: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs">Hot: $5.25</p>
+                  <p className="text-gray-600 md:text-[16px] text-xs"> Dairy free</p>
                 </div>
               </div>
 
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold bg-green-200 rounded-md px-2">Toppings +$0.50</h2>
-                  <p>Tapioca pearls, lychee jelly, mixed jelly, grass jelly, pop strawberry, pop passionfruit, mango stars</p>
+                  <h2 className="md:text-xl text-xs font-semibold bg-green-200 rounded-md px-2">Toppings +$0.50</h2>
+                  <p className="text-gray-600 md:text-[16px] text-xs md:block hidden">Tapioca pearls, lychee jelly, mixed jelly, grass jelly, pop strawberry, pop passionfruit, mango stars</p>
                 </div>
               </div>
 
               <div className="flex justify-center ">
-                <img src={bubbleTea} className="h-40 w-50" alt="Bubble Tea" />
-                <img src={bubbleTea2} className="h-40 w-50" alt="Bubble Tea" />
+                <img src={bubbleTea} className="md:h-40 md:w-50 h-20 w-20 object-contain" alt="Bubble Tea" />
+                <img src={bubbleTea2} className="md:h-40 md:w-50 h-20 w-20 object-contain" alt="Bubble Tea" />
               </div>
             </div>
           </div>
