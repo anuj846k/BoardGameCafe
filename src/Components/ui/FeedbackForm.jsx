@@ -1,8 +1,19 @@
-// FeedbackForm.jsx
 
 import  { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 const FeedbackForm = () => {
+
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Trigger animation when 50% of the component is visible
+  });
+  
+  const animationVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
@@ -18,6 +29,14 @@ const FeedbackForm = () => {
   };
 
   return (
+    <div ref={ref}>
+    <motion.div
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={animationVariants}
+        transition={{ duration: 0.5 }}
+        
+      >
     <div className="flex justify-end items-start  pr-28">
       <form className="bg-[#E0F0B1] shadow-md rounded px-32 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-4">Feedback Form</h2>
@@ -68,6 +87,8 @@ const FeedbackForm = () => {
           </button>
         </div>
       </form>
+    </div>
+    </motion.div>
     </div>
   );
 };

@@ -41,7 +41,7 @@ const Carousel = () => {
     return (
 
       <div className="relative">
-        <div>
+        <div className="rellax" data-rellax-speed="-5">
         <h1 className="text-4xl pl-10 font-bold mb-2">Explore our fun events</h1>
         </div>
         <div className="overflow-hidden rounded-lg">
