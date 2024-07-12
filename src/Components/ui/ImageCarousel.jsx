@@ -42,7 +42,7 @@ const Carousel = () => {
 
       <div className="relative">
         <div className="rellax" data-rellax-speed="-5">
-        <h1 className="text-4xl pl-10 font-bold mb-2">Explore our fun events</h1>
+        <h1 className="text-4xl pl-12 pt-8 font-bold mb-2">Explore our fun events</h1>
         </div>
         <div className="overflow-hidden rounded-lg">
           <img
@@ -52,25 +52,27 @@ const Carousel = () => {
           />
         </div>
         <div
-          className="absolute inset-y-0 left-0 flex items-center justify-center w-12 bg-black bg-opacity-50 cursor-pointer"
+          className="absolute inset-y-0 left-0 flex items-center justify-center w-12 cursor-pointer"
           onClick={prevSlide}
         >
           <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
-              d="M15.707 9.293l-7-7a1 1 0 0 0-1.414 1.414L12.586 10l-5.293 5.293a1 1 0 0 0 1.414 1.414l7-7a1 1 0 0 0 0-1.414z"
+              
+              d="M4.293 9.293l7-7a1 1 0 0 1 1.414 1.414L7.414 10l5.293 5.293a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414z"
               clipRule="evenodd"
             />
           </svg>
         </div>
         <div
-          className="absolute inset-y-0 right-0 flex items-center justify-center w-12 bg-black bg-opacity-50 cursor-pointer"
+          className="absolute inset-y-0 right-0 flex items-center justify-center w-12 cursor-pointer"
           onClick={nextSlide}
         >
           <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
-              d="M4.293 9.293l7-7a1 1 0 0 1 1.414 1.414L7.414 10l5.293 5.293a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414z"
+              d="M15.707 9.293l-7-7a1 1 0 0 0-1.414 1.414L12.586 10l-5.293 5.293a1 1 0 0 0 1.414 1.414l7-7a1 1 0 0 0 0-1.414z"
+              
               clipRule="evenodd"
             />
           </svg>

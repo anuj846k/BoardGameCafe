@@ -52,10 +52,10 @@ const ReviewCarousel = () => {
         transition={{ duration: 0.5 }}
         
       >
-    <div className="max-w-xl pl-32 py-8 ">
+    <div className=" justify-center py-10 px-10 ">
       <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[#E0F0B1]"></div>
+          <div className="absolute inset-0 bg-amber-200"></div>
         </div>
         <div className="relative px-6 py-8">
           <div className="text-center">
