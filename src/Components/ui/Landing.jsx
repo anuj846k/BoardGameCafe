@@ -26,19 +26,11 @@ export default function Landing() {
               animate={{ x: 0, opacity: 1 }} 
               transition={{ type: "spring", duration: 2 }} 
             >
-              <h1 className=" text-6xl font-roboto md:text-6xl uppercase shadow-lg z-10 font-bold text-white rounded-s-full  text-center p-7">
+              <h1 className=" text-4xl font-roboto md:text-6xl uppercase shadow-lg z-10 font-bold text-white rounded-s-full text-center p-7 bg-black bg-opacity-50">
                 Welcome to Sip and Play
               </h1>
             </motion.div>
-            <motion.div
-              initial={{ x: 200, opacity: 0 }} 
-              animate={{ x: 0, opacity: 1 }} 
-              transition={{ type: "spring", duration: 2 }} 
-            >
-              <p className=" text-lg md:text-3xl font-roboto text-white  px-16  text-center">
-                A unique experience awaits you!
-              </p>
-            </motion.div>
+            
 
           </div>
         </div>
