@@ -44,12 +44,12 @@ useEffect(() => {
     <Navbar />
     <div
       id="event"
-      className="w-full h-full bg-amber-100"
+      className="w-full h-full bg-amber-100 md:overflow-hidden "
     >
-      <section className="w-full h-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center ">
+      <section className="w-full h-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center md:overflow-hidden ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-4">
-            <h1 className="text-5xl font-bold tracking-tighter md:text-4xl/tight lg:text-7xl">
+            <h1 className="text-5xl font-bold mt-6 md:mt-0 tracking-tighter md:text-4xl/tight lg:text-7xl">
               Upcoming Events and Programs
             </h1>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
