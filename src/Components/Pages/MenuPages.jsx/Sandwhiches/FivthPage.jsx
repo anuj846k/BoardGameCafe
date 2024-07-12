@@ -82,12 +82,7 @@ const FivthPage = () => {
                 </div>
               </div>
 
-              <div className="md:flex hidden justify-between">
-                <div>
-                  <h2 className="md:text-xl text-xs font-semibold">Mixed Green Salad</h2>
-                  <p>$6.50</p>
-                </div>
-              </div>
+                
             </div>
 
             <div className="space-y-2 w-1/2">

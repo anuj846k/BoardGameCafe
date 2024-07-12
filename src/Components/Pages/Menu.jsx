@@ -31,7 +31,7 @@ function ParallaxImage() {
   return (
     <>
     <Navbar />
-    <div className="w-full h-auto bg-amber-100  items-center justify-center overflow-hidden" onMouseMove={handleMouseMove}>
+    <div className="w-full h-auto bg-amber-100  items-center justify-center overflow-hidden " onMouseMove={handleMouseMove}>
       <div className="flex md:flex-row flex-col items-center justify-between mt-24 mb-20">
         <div className="w-3/4 pl-8 text-left animate-fadeIn">
           <h1 className="md:text-7xl text-4xl text-black font-bold font-mono mb-4">Discover Sip & Play</h1>
@@ -57,8 +57,7 @@ function ParallaxImage() {
         <Mybook />
       </div>
     </div>
-    <br />
-    <br />
+    
     <Footer/>
     </>
   );

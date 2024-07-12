@@ -11,6 +11,7 @@ import FifthPage from "./MenuPages.jsx/Sandwhiches/FivthPage.jsx";
 import SixthPage from "./MenuPages.jsx/Seasonal/SixthPage.jsx";
 import SeventhPage from "./MenuPages.jsx/Beer&Wines/SeventhPage.jsx";
 import { useState, useEffect } from 'react';
+import ThankPage from "./MenuPages.jsx/ThankPage/ThankPage.jsx";
 
 // Import other components and assets as before
 
@@ -31,7 +32,7 @@ function MyBook() {
       if (window.innerWidth < 768) { 
         setDimensions({ width: 300, height: 350 });
       } else {
-        setDimensions({ width: 600, height: 700 }); 
+        setDimensions({ width: 600, height: 650 }); 
       }
     }
 
@@ -42,14 +43,14 @@ function MyBook() {
   }, []);
 
   return (
-    <div style={BgTextureStyle} className="w-full h-full flex justify-center items-center">
+    <div style={BgTextureStyle} className=" mt-2 mb-20 overflow-hidden w-full h-full flex justify-center items-center ">
       <HTMLFlipBook
         width={dimensions.width}
         height={dimensions.height}
         showCover="true"
       >
         <Page number={1}>
-          <Cover coverImg={coverImg} title="3d MENU" />
+          <Cover coverImg={coverImg} />
         </Page>
         <Page number={2}>
           <FirstPage />
@@ -73,7 +74,10 @@ function MyBook() {
           <SeventhPage />
         </Page>
         <Page number={9}>
-          <Cover coverImg={coverImg} title="Thanks" />
+          <ThankPage/>
+        </Page>
+        <Page number={10}>
+          <Cover coverImg={coverImg}  />
         </Page>
       </HTMLFlipBook>
     </div>
