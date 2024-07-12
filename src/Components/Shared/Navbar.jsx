@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
           <img className="w-16 h-16" alt="logo" src={Logo} />
-            {/* <h1 className="text-lg font-bold">Logo</h1> */}
+           
           </div>
           <div className="hidden md:flex">
             <ul className="ml-4 flex space-x-4 font-semibold">
