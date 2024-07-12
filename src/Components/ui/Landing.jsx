@@ -38,7 +38,7 @@ export default function Landing() {
 
       <Marquee />  
 
-      <section className="p-6 sm:p-10 bg-gray-100">
+      <section className="p-6 sm:p-10cs">
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
