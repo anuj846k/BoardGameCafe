@@ -103,7 +103,7 @@ export default function Register() {
             </div>
           </div>
         </section>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-gray-800 bg-green-300 p-5 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-amber-100 bg-green-900 p-5 text-center">
                     Popular Board Games
                 </h1>
         <div className="mt-8 w-full flex justify-center bg-white ">
