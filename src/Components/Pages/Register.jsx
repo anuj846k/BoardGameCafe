@@ -29,8 +29,8 @@ export default function Register() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 px-6 md:px-6 border-2 border-gray-200">
-          <div className="w-full md:w-3/5 lg:w-2/5 mx-auto border-2 p-7 rounded-lg border-black">
-            <div className="space-y-6 ">
+          <div className="w-full md:w-3/5 lg:w-2/5 mx-auto border-2 p-7 rounded-lg border-black bg-amber-100">
+            <div className="space-y-6">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">
                 Reserve Your Spot
               </h2>
