@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+    .font-outline-2{
+        -webkit-text-stroke: 2px white;
+
+    }
+}
+
+    
+    @layer components{
+        .primary-btn{
+            @apply block;
+        }
+        .page-shadow{
+            @apply shadow-[inset_0_0_8px_rgba(0,0,0,0.6),12px_12px_14px_rgba(0,0,0,0.9)];
+        }
+    }
