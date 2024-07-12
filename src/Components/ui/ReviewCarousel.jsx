@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 useState
 
@@ -21,6 +23,16 @@ const feedbackData = [
 ];
 
 const ReviewCarousel = () => {
+
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Trigger animation when 50% of the component is visible
+  });
+  
+  const animationVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const [currentFeedback, setCurrentFeedback] = useState(0);
 
   const nextFeedback = () => {
@@ -32,6 +44,14 @@ const ReviewCarousel = () => {
   };
 
   return (
+    <div ref={ref}>
+    <motion.div
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={animationVariants}
+        transition={{ duration: 0.5 }}
+        
+      >
     <div className="max-w-xl pl-32 py-8 ">
       <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="absolute inset-0">
@@ -58,6 +78,8 @@ const ReviewCarousel = () => {
           </button>
         </div>
       </div>
+    </div>
+    </motion.div>
     </div>
   );
 };
