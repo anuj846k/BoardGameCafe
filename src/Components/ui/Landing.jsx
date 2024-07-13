@@ -27,7 +27,7 @@ export default function Landing() {
               transition={{ type: "spring", duration: 2 }} 
             >
               <h1 className=" text-4xl font-roboto md:text-6xl uppercase shadow-lg z-10 font-bold text-white rounded-s-full text-center p-7 bg-black bg-opacity-50">
-                Welcome to Sip and Play
+              A unique café experience awaits you
               </h1>
             </motion.div>
             
