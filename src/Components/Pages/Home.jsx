@@ -8,7 +8,7 @@ import FeedbackForm from "../ui/FeedbackForm";
 
 export default function Home() {
     return (
-        <div id="home">
+        <div id="home" className="bg-[#FDF3C7]">
             <Navbar />
             <Landing />
             <ImageCarousel />

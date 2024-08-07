@@ -61,7 +61,7 @@ export default function Landing() {
                         Hours
                     </h2>
                 </motion.div>
-                <ul className="list-disc ml-4 text-center">
+                <ul className="ml-4 text-center">
                     <li>New opening hours:</li>
                     <li>Sunday: 10am-11pm</li>
                     <li>Mon-Thurs: 11am-11pm</li>
