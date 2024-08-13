@@ -48,10 +48,10 @@ const FeedbackForm = () => {
             <p className="mt-4 text-lg text-gray-700">
               Your thoughts help us improve. Share your experience and suggestions with us!
             </p>
-           <div className='flex gap-5'>
-           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40" />
-           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40 hidden md:block" />
-           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40  hidden md:block" />
+           <div className='flex gap-5  rounded-md'>
+           <img src={chess} alt="Chess" className="mt-8 bg-white rounded-lg shadow-xl md:w-50 md:h-40" />
+           <img src={chess} alt="Chess" className="mt-8 bg-teal-500 rounded-lg shadow-xl w-50 h-40 hidden md:block" />
+           <img src={chess} alt="Chess" className="mt-8 bg-indigo-600 rounded-lg shadow-xl w-50 h-40  hidden md:block" />
 
            </div>
 

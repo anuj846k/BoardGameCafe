@@ -5,7 +5,8 @@ const ReviewCarousel = () => {
   const reviews = [
     {
       name: "Jane Smith",
-      review: "Great games and coffee. The perfect spot to unwind with friends!",
+      review:
+        "Great games and coffee. The perfect spot to unwind with friends!",
       img: "https://randomuser.me/api/portraits/men/51.jpg",
       rating: 5,
     },
@@ -38,23 +39,23 @@ const ReviewCarousel = () => {
       review: "Loved the games, the ambiance, and the overall vibe here!",
       img: "https://randomuser.me/api/portraits/women/61.jpg",
       rating: 5,
-    },  
+    },
     {
       name: "Olivia Green",
-      review: "Great atmosphere and an excellent selection of board games. Will be back!",
+      review:
+        "Great atmosphere and an excellent selection of board games. Will be back!",
       img: "https://randomuser.me/api/portraits/women/72.jpg",
       rating: 4,
     },
     {
       name: "Ethan White",
-      review: "The vibe is amazing, and the staff is super friendly. Highly recommend!",
+      review:
+        "The vibe is amazing, and the staff is super friendly. Highly recommend!",
       img: "https://randomuser.me/api/portraits/men/33.jpg",
       rating: 5,
     },
-   
-    
   ];
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -62,8 +63,6 @@ const ReviewCarousel = () => {
       prevIndex === reviews.length - 4 ? 0 : prevIndex + 1
     );
   };
-
-
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -74,8 +73,11 @@ const ReviewCarousel = () => {
   return (
     <div className="mb-20">
       <div className="items-center flex justify-center mb-10">
-        <h1 className="md:text-6xl text-4xl text-center font-bold text-[#004D43]">Customer Feedback</h1>
+        <h1 className="md:text-6xl text-4xl pl-3 pr-3 text-center font-bold text-[#004D43]">
+          Customer Feedback
+        </h1>
       </div>
+
       <div className="bg-[#004D43] min-h-[50vh] p-4 md:p-20 items-center justify-center flex relative ">
         <div className="w-full max-w-7xl md:overflow-hidden overflow-x-auto  ">
           <div
@@ -106,7 +108,9 @@ const ReviewCarousel = () => {
                         ))}
                     </div>
                   </div>
-                  <p className="text-center text-lg leading-6 tracking-wide  mt-4 ">{review.review}</p>
+                  <p className="text-center text-lg leading-6 tracking-wide  mt-4 ">
+                    {review.review}
+                  </p>
                 </div>
               </div>
             ))}
