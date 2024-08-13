@@ -1,104 +1,124 @@
-
-
-
-import  { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import chess from "../../assets/img/chess.gif";
 
-
 const FeedbackForm = () => {
-
   const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger animation when 50% of the component is visible
+    threshold: 0.2,
+    triggerOnce: true
   });
-  
+
   const animationVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send feedback data to backend or display it)
     console.log(`Name: ${name}, Email: ${email}, Feedback: ${feedback}`);
-    // Optionally, you can reset form fields after submission
-    setName('');
-    setEmail('');
-    setFeedback('');
+    setSubmitted(true);
+    setTimeout(() => {
+      setName('');
+      setEmail('');
+      setFeedback('');
+      setSubmitted(false);
+    }, 3000);
   };
 
   return (
-    
-    <div ref={ref}>
-    <motion.div
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={animationVariants}
-        transition={{ duration: 0.5 }}
-        
-      >
-        
-    <div className="flex justify-end items-start font-mono md:pr-36 pb-8 flex-col md:flex-row ">
-      <div className="justify-center align-middle items-center md:justify-center md:w-1/2 pl-20 p-10 pr-20 pt-0">
-        <img className="w-96 h-96" alt="logo" src={chess} />
+    <div className="bg-amber-100 h-full py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={animationVariants}
+          className="lg:grid lg:grid-cols-2 lg:gap-8"
+        >
+          <div className="mb-8 lg:mb-0">
+            <h2 className="text-3xl font-extrabold text-[#004D43] sm:text-4xl">
+              We Value Your Feedback
+            </h2>
+            <p className="mt-4 text-lg text-gray-700">
+              Your thoughts help us improve. Share your experience and suggestions with us!
+            </p>
+           <div className='flex gap-5'>
+           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40" />
+           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40 hidden md:block" />
+           <img src={chess} alt="Chess" className="mt-8 rounded-lg shadow-xl w-50 h-40  hidden md:block" />
+
+           </div>
+
+          </div>
+
+          <div className="mt-8 lg:mt-0">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-[#004D43]">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-[#004D43] focus:border-[#004D43]"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-[#004D43]">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-[#004D43] focus:border-[#004D43]"
+                />
+              </div>
+              <div>
+                <label htmlFor="feedback" className="block text-sm font-medium text-[#004D43]">
+                  Feedback
+                </label>
+                <textarea
+                  id="feedback"
+                  rows="4"
+                  value={feedback}
+                  onChange={(e) => setFeedback(e.target.value)}
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-[#004D43] focus:border-[#004D43]"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#004D43] hover:bg-[#003d35] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#004D43]"
+                >
+                  Submit Feedback
+                </button>
+              </div>
+            </form>
+            {submitted && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded"
+              >
+                Thank you for your feedback!
+              </motion.div>
+            )}
+          </div>
+        </motion.div>
       </div>
-      <div className="md:w-1/2">
-      <form className="bg-amber-100 shadow-xl rounded-3xl  px-20 md:px-32 pl-20 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
-        <h2 className="text-2xl font-bold mb-4">Feedback Form</h2>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-            Name
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 pr-28 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name"
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="feedback">
-            Feedback
-          </label>
-          <textarea
-            className="shadow appearance-none border rounded w-full py-7 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="feedback"
-            placeholder="Your Feedback"
-            value={feedback}
-            onChange={(e) => setFeedback(e.target.value)}
-          ></textarea>
-        </div>
-        <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-      </div>
-    </div>
-    </motion.div>
     </div>
   );
 };
