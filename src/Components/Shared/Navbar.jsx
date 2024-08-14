@@ -45,7 +45,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex md:hidden">
-            <button onClick={toggleMenu} className="text-gray-900 hover:text-gray-900 focus:outline-none">
+            <button onClick={toggleMenu} className={`${isScrolled? 'text-gray-900' :'text-white'} focus:outline-none`}>
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>

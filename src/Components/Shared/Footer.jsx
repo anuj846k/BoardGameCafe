@@ -1,10 +1,8 @@
 import Logo from "../../assets/Logo/logo.png";
-import { FaFacebook, FaInstagram, FaTiktok} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
-
-  const emailAddress = 'sipnplaynyc@gmail.com';
-
+  const emailAddress = "sipnplaynyc@gmail.com";
 
   return (
     <footer className="bg-[#E0F0B1] py-5">
@@ -16,40 +14,32 @@ const Footer = () => {
             <p>471 5th Ave.</p>
             <p>Brooklyn, NY 11215</p>
           </p>
-          
         </div>
-        <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold mb-6">Socials</h4>
-          <div className="flex">
-          
-      <p className="mr-8">
-      <a href="https://www.facebook.com/sipnplaynyc/" target="_blank" rel="noopener noreferrer">
-        <FaFacebook className=" hover:animate-bounce w-6 h-6" />
-      </a>
-      </p>
-      <p className="mr-8">
-      <a href="https://www.instagram.com/sipnplaynyc/?hl=en" target="_blank" rel="noopener noreferrer">
-        <FaInstagram className=" hover:animate-bounce w-6 h-6" />
-      </a>
-      </p>
-      <p className="mr-8">
-      <a href="https://www.tiktok.com/@sipnplaynycofficial?lang=en" target="_blank" rel="noopener noreferrer">
-        <FaTiktok className=" hover:animate-bounce w-6 h-6" />
-      </a>
-      </p>
-      </div>
-    </div>
-  
-        <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Contact Us</h4>
-          
-          <p className="py-5">
-            <a href={`mailto:${emailAddress}`} className="my-5 hover:underline">
-              {emailAddress}
-            </a>
-          </p>
-          <p className="py-4">718-971-1684</p>
-          <p className="my-8">©2020 by Sip & Play</p>
+        <div className="w-full md:w-1/3 mb-3 md:mb-0">
+            <h4 className="text-lg font-bold mb-4">Socials</h4>
+            <div className="flex space-x-6">
+              <a href="https://www.facebook.com/sipnplaynyc/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                <FaFacebook className="w-8 h-8 hover:animate-bounce" />
+              </a>
+              <a href="https://www.instagram.com/sipnplaynyc/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 transition-colors">
+                <FaInstagram className="w-8 h-8 hover:animate-bounce" />
+              </a>
+              <a href="https://www.tiktok.com/@sipnplaynycofficial?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+                <FaTiktok className="w-8 h-8 hover:animate-bounce" />
+              </a>
+            </div>
+          </div>
+
+        <div className="w-full md:w-1/3">
+          <h4 className="text-lg font-bold mb-4">Contact Us</h4>
+          <a
+            href={`mailto:${emailAddress}`}
+            className="block mb-2 hover:underline"
+          >
+            {emailAddress}
+          </a>
+          <p className="mb-2">718-971-1684</p>
+          <p className="text-sm text-gray-600">©2024 by Sip & Play</p>
         </div>
       </div>
     </footer>

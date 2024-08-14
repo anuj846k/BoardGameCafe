@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import chess from "../../assets/img/chess.gif";
 
 const FeedbackForm = () => {
   const { ref, inView } = useInView({
     threshold: 0.2,
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   const animationVariants = {
@@ -14,9 +14,9 @@ const FeedbackForm = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [feedback, setFeedback] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [feedback, setFeedback] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
@@ -24,9 +24,9 @@ const FeedbackForm = () => {
     console.log(`Name: ${name}, Email: ${email}, Feedback: ${feedback}`);
     setSubmitted(true);
     setTimeout(() => {
-      setName('');
-      setEmail('');
-      setFeedback('');
+      setName("");
+      setEmail("");
+      setFeedback("");
       setSubmitted(false);
     }, 3000);
   };
@@ -41,26 +41,30 @@ const FeedbackForm = () => {
           variants={animationVariants}
           className="lg:grid lg:grid-cols-2 lg:gap-8"
         >
-          <div className="mb-8 lg:mb-0">
-            <h2 className="text-3xl font-extrabold text-[#004D43] sm:text-4xl">
+          <div className="mb-8 lg:mb-0 relative">
+            <h2 className="text-3xl  font-extrabold text-[#004D43] sm:text-4xl">
               We Value Your Feedback
             </h2>
-            <p className="mt-4 text-lg text-gray-700">
-              Your thoughts help us improve. Share your experience and suggestions with us!
+            <p className="mt-4 text-lg text-gray-700 pb-3">
+              Your thoughts help us improve. Share your experience and
+              suggestions with us!
             </p>
-           <div className='flex gap-5  rounded-md'>
-           <img src={chess} alt="Chess" className="mt-8 bg-white rounded-lg shadow-xl md:w-50 md:h-40" />
-           <img src={chess} alt="Chess" className="mt-8 bg-teal-500 rounded-lg shadow-xl w-50 h-40 hidden md:block" />
-           <img src={chess} alt="Chess" className="mt-8 bg-indigo-600 rounded-lg shadow-xl w-50 h-40  hidden md:block" />
-
-           </div>
-
+            <div className="flex   md:h-[50vh] md:w-[70vh] item-center justify-center  ">
+              <img
+                src={chess}
+                alt="Chess"
+                className="md:p-10 p-5 object-contain bg-[#004D43] rounded-full shadow-2xl"
+              />
+            </div>
           </div>
 
           <div className="mt-8 lg:mt-0">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#004D43]">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-[#004D43]"
+                >
                   Name
                 </label>
                 <input
@@ -73,7 +77,10 @@ const FeedbackForm = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-[#004D43]">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-[#004D43]"
+                >
                   Email
                 </label>
                 <input
@@ -86,7 +93,10 @@ const FeedbackForm = () => {
                 />
               </div>
               <div>
-                <label htmlFor="feedback" className="block text-sm font-medium text-[#004D43]">
+                <label
+                  htmlFor="feedback"
+                  className="block text-sm font-medium text-[#004D43]"
+                >
                   Feedback
                 </label>
                 <textarea
