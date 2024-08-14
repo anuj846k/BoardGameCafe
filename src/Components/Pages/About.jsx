@@ -15,7 +15,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex w-full justify-center align-middle mt-10 px-36">
-        <p className="text-xl text-gray-800 text-slate-600 w-full">
+        <p className="text-xl text-gray-800  w-full">
           How it works..
           Our name says it all!
           Founder, Jonathan Li, shares a passion for board games, boba, and 

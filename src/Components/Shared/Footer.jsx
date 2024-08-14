@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/sipnplaynyc/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 transition-colors">
                 <FaInstagram className="w-8 h-8 hover:animate-bounce" />
               </a>
-              <a href="https://www.tiktok.com/@sipnplaynycofficial?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+              <a href="https://www.tiktok.com/@sipnplaynycofficial?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-violet-500 transition-colors">
                 <FaTiktok className="w-8 h-8 hover:animate-bounce" />
               </a>
             </div>
