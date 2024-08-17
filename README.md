@@ -1,8 +1,63 @@
-# React + Vite
+# Sip & Play Café Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to the Sip & Play Café website! This project was designed to showcase the café’s offerings in a visually engaging manner, meeting the owner's vision and requirements. We used a variety of modern technologies and techniques to create an interactive and dynamic user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+
+Check out the live website: [Sip & Play Café](https://board-game-cafe.vercel.app/)
+
+## Project Breakdown
+
+### Landing Page
+
+- **Features:** Unique and easy-to-navigate design with Framer Motion animations and image carousels.
+- **Major Contributor:** Aditi
+
+![Home Page Screenshot](./public/Home.png)
+
+### Events
+
+- **Features:** Events calendar with multiple view modes for better organization.
+- **Major Contributor:** Ram
+
+![Event Page Screenshot](./public/Events.png)
+
+### 3D Menu Page
+
+- **Features:** Flipping menu book pages effect for a 3D appearance.
+- **Major Contributor:** Anuj
+
+![3D Menu Page Screenshot](./public/Menu.png)
+
+### Reservation Page
+
+- **Features:** Information on reservations and booking options.
+- **Major Contributor:** Ram
+
+![Reservation Page Screenshot](./public/Reserve.png)
+
+### Board Games
+
+- **Features:** Enhanced visual effect replacing a plain list of games.
+- **Major Contributor:** Ram
+
+![Board Games Page Screenshot](./public/Games.png)
+
+## Technologies Used
+
+- **React JS**
+- **Vite**
+- **JavaScript**
+- **HTML**
+- **CSS**
+- **Framer Motion**
+
+## Contributing
+
+- **Aditi:** Landing Page
+- **Ram:** Events
+- **Anuj:** 3D Menu Page
+
+Feel free to explore the website and enjoy the interactive features designed to enhance your experience at the Sip & Play Café!
