@@ -54,7 +54,7 @@ const Carousel = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-7 ">
+      <div className="flex justify-center mt-4 ">
         <Link
           to="/event"
           className=" flex  items-center text-2xl md:text-4xl py-3 px-10 bg-yellow-800 text-white rounded-full hover:bg-green-800"

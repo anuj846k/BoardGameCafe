@@ -6,7 +6,7 @@ export default function Landing() {
   return (
     <div>
       <section
-        className="relative h-screen bg-cover bg-center"
+        className="relative h-screen bg-cover bg-center overflow-hidden"
         style={{
           backgroundImage: 'url("https://via.placeholder.com/1600x900")',
         }}

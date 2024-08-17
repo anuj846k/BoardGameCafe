@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import Logo from "../../assets/Logo/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +27,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const isHomePage = location.pathname === "/";
+  const buttonTextClass = isScrolled
+    ? "text-gray-900"
+    : isHomePage
+    ? "text-white"
+    : "text-black";
 
   return (
     <nav
@@ -103,9 +110,7 @@ const Navbar = () => {
           <div className="flex md:hidden">
             <button
               onClick={toggleMenu}
-              className={`${
-                isScrolled ? "text-gray-900" : "text-white"
-              } focus:outline-none`}
+              className={`${buttonTextClass} focus:outline-none`}
             >
               <svg
                 className="h-6 w-6"
